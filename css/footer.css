@@ -10,9 +10,17 @@
     background: #040E27;
     position: relative;
     padding: 20px;
+    display: flex;
+    /* align-items:center; */
+    justify-content: space-evenly;
   }
-  
-  
+
+  .footer > section {
+    flex: 33%;
+    justify-self:center;
+    /* text-align: center; */
+    /* align-content: center; */
+  }
   
   .footer .footer-widget {
     padding:20px;
