@@ -1,3 +1,31 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@pjwmascall 
+codeclan
+/
+v55_classnotes
+Private
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+v55_classnotes/week_03/day_2/02_css_grid_flexbox_lab/cc_travel_solution/index.html
+@annahndr
+annahndr adds MVC and css end code
+Latest commit b9bf7d9 13 hours ago
+ History
+ 1 contributor
+320 lines (298 sloc)  11.9 KB
+   
 <!doctype html>
 <html>
 
@@ -15,7 +43,9 @@
     <link rel="stylesheet" href="css/testimonial.css">
     <link rel="stylesheet" href="css/favourite.css">
     <link rel="stylesheet" href="css/popular.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
     <!-- header-start -->
     <header>
@@ -30,64 +60,289 @@
         </nav>
     </header>
     <!-- header-end -->
-
     <main>
         <!-- favourites -->
         <section class="favourite">
-            Grid of favourite destinations here
-           
+
+            <article class="single-favourite favourite-bg-1">
+                <div class="container">
+                    <div class="favourite-text">
+                        <h3>Indonesia</h3>
+                        <p>Pixel perfect design with awesome contents</p>
+                        <a href="#" class="boxed-btn3">Explore Now</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="single-favourite favourite-bg-2">
+                <div class="container">
+                    <div class="favourite-text">
+                        <h3>Australia</h3>
+                        <p>Pixel perfect design with awesome contents</p>
+                        <a href="#" class="boxed-btn3">Explore Now</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="single-favourite favourite-bg-3">
+                <div class="container">
+                    <div class="favourite-text">
+                        <h3>Switzerland</h3>
+                        <p>Pixel perfect design with awesome contents</p>
+                        <a href="#" class="boxed-btn3">Explore Now</a>
+                    </div>
+                </div>
+            </article>
         </section>
         <!-- favourites-end -->
 
-        <!-- search-start  -->
+        <!-- where-togo-start  -->
         <section class="where-togo">
-            Search Form Here
+            <div class="form-area">
+                <h3>Where do you want to go?</h3>
+            </div>
+            <div class="search-wrap">
+                <form class="search-form" action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Where to go?">
+                    </div>
+                    <div class="input-field">
+                        <input type="date" id="datepicker" placeholder="Date">
+                    </div>
+                    <div class="input-field">
+                        <select class="nice-select">
+                            <option disabled selected>Travel type</option>
+                            <option value="1">Some option</option>
+                            <option value="2">Another option</option>
+                        </select>
+                    </div>
+                    <div class="search-btn">
+                        <button class="search-btn" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
         </section>
-        <!-- search-end  -->
+        <!-- where-togo-end  -->
 
         <!-- popular-destination-start  -->
         <section class="popular">
-            Popular Destinations Grid Here
-        </section>
-        <!-- popular-destination-end -->
+            <article class="container">
+                <div class="section-title">
+                    <h3>Popular Destinations</h3>
+                    <p>Some of the most popular countries to visit!</p>
+                </div>
+            </article>
 
-        <!-- popular-places-start -->
+            <article class="container row">
+                <div class="single-destination">
+                    <img src="img/destination/italy.png" alt="">
+                    <div class="content">
+                        <p>
+                            Italy
+                            <a href="#"> 07 Places</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="single-destination">
+                    <img src="img/destination/brazil.png" alt="">
+                    <div class="content">
+                        <p>
+                            Brazil
+                            <a href="#"> 03 Places</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="single-destination">
+                    <img src="img/destination/america.png" alt="">
+                    <div class="content">
+                        <p>
+                            America
+                            <a href="#">10 Places</a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="single-destination">
+                    <img src="img/destination/nepal.png" alt="">
+                    <div class="content">
+                        <p>
+                            Nepal
+                            <a href="#">02 Places</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="single-destination">
+                    <img src="img/destination/maldives.png" alt="">
+                    <div class="content">
+                        <p>
+                            Maldives
+                            <a href="#">02 Places</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="single-destination">
+                    <img src="img/destination/indonesia.png" alt="">
+                    <div class="content">
+                        <p>
+                            Indonesia
+                            <a href="#">05 Places</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- popular-destination-end  -->
+
         <section class="popular">
-            popular places here
-        </section>
-        <!-- popular-places-end  -->
+            <article class="container">
+                <div class="section-title">
+                    <h3>Popular Places</h3>
+                    <p>Some of the most popular places to visit</p>
+                </div>
+            </article>
 
-        <!-- testimonials-start  -->
-        <section class="testimonial-area">
-            Testimonials Here
+            <article class="container row">
+                <div class="single-destination">
+                    <img src="img/place/california.png" alt="">
+                    <a href="#" class="price">£1500</a>
+                    <div class="place-info">
+                        <a href="">
+                            <h3>California</h3>
+                        </a>
+                        <p>United State of America</p>
+                    </div>
+                </div>
+
+                <div class="single-destination">
+                    <img src="img/place/korola_megna.png" alt="">
+                    <a href="#" class="price">£1800</a>
+                    <div class="place-info">
+                        <a href="">
+                            <h3>Korola Megna</h3>
+                        </a>
+                        <p>United State of America</p>
+                    </div>
+                </div>
+
+                <div class="single-destination">
+                    <img src="img/place/london.png" alt="">
+                    <a href="#" class="price">£450</a>
+                    <div class="place-info">
+                        <a href="">
+                            <h3>London</h3>
+                        </a>
+                        <p>United Kingdom</p>
+                    </div>
+                </div>
+
+                <div class="single-destination">
+                    <img src="img/place/miami.png" alt="">
+                    <a href="#" class="price">£2500</a>
+                    <div class="place-info">
+                        <a href="">
+                            <h3>Miami Beach</h3>
+                        </a>
+                        <p>United State of America</p>
+                    </div>
+                </div>
+
+                <div class="single-destination">
+                    <img src="img/place/california_2.png" alt="">
+                    <a href="#" class="price">£2100</a>
+                    <div class="place-info">
+                        <a href="">
+                            <h3>California</h3>
+                        </a>
+                        <p>United State of America</p>
+                    </div>
+                </div>
+
+                <div class="single-destination">
+                    <img src="img/place/iceland.png" alt="">
+                    <a href="#" class="price">£500</a>
+                    <div class="place-info">
+                        <a href="">
+                            <h3>Saintmartine Iceland</h3>
+                        </a>
+                        <p>Iceland</p>
+                    </div>
+                </div>
+            </article>
         </section>
-        <!-- testimonials-end -->
+
+        <!-- testimonials  -->
+        <section class="testimonial-area">
+            <article class="container row">
+                <div class="single-testimonial">
+                    <div class="row">
+                        <div class="single-testmonial">
+                            <div class="author-thumb">
+                                <img src="img/testmonial/author.png" alt="">
+                            </div>
+                            <p>"The Happiest Place on Earth!"</p>
+                            <div class="testmonial-author">
+                                <h3>- Micky Mouse</h3>
+                                <h4>KFC</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial">
+                    <div class="row">
+                        <div class="single-testmonial text-center">
+                            <div class="author-thumb">
+                                <img src="img/testmonial/author.png" alt="">
+                            </div>
+                            <p>"Not what I was expecting. A LOT of walking."</p>
+                            <div class="testmonial-author">
+                                <h3>- Samwise Gamgee</h3>
+                                <h4>Mordor</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-testimonial">
+                    <div class="row">
+                        <div class="single-testmonial text-center">
+                            <div class="author-thumb">
+                                <img src="img/testmonial/author.png" alt="">
+                            </div>
+                            <p>"It was nice while it lasted"</p>
+                            <div class="testmonial-author">
+                                <h3>- Darth Vader</h3>
+                                <h4>Alderan</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
 
-    <!-- footer-start -->
+    <!-- footer -->
     <footer class="footer">
-        <section>
-            <h3>CC Travel</h3>
-        </section>
-        <section>
-            <nav>
-                <ul>
-                    <li class='list_item1'><a href=''>Pricing</a></li>
-                    <li class='list_item2'><a href=''>About</a></li>
-                    <li class='list_item3'><a href=''>Gallery</a></li>
-                    <li class='list_item4'><a href=''>Contacts</a></li>
+        <div class="container row footer-area">
+            <h3 class="footer-title">
+                CC Travel
+            </h3>
+            <div class="footer-widget">
+                <ul class="links">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#"> Gallery</a></li>
+                    <li><a href="#"> Contact</a></li>
                 </ul>
-            </nav>
-        </section>
-        <section>
-            <p>123 Floor<br>
-                Street Edinburgh EH1 2BC<br>
-                0131 234 9734<br>
-                Contact@CCTravel.com
-            </p>
-        </section>
+            </div>
+            <div class="footer-widget">
+                <p>123 Floor <br> Street Edingburg EH1 2BC <br>
+                    <a href="#">0131 234 9734</a> <br>
+                    <a href="#">contact@cctravel.com</a>
+                </p>
+            </div>
+        </div>
     </footer>
-    <!-- footer-end -->
+
 </body>
 
 </html>
